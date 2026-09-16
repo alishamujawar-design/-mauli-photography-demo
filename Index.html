@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mauli Photography - Demo</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#111;
+    color:white;
+}
+
+/* Header */
+
+header{
+    background:#000;
+    padding:20px;
+    text-align:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+header h1{
+    color:#d4af37;
+    letter-spacing:2px;
+}
+
+nav{
+    margin-top:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 10px;
+}
+
+nav a:hover{
+    color:#d4af37;
+}
+
+/* Hero */
+
+#home{
+    min-height:90vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url("https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=80");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.demo{
+    border:1px solid #d4af37;
+    padding:6px 15px;
+    border-radius:20px;
+    color:#d4af37;
+    margin-bottom:25px;
+    font-size:12px;
+}
+
+#home h2{
+    font-size:50px;
+    line-height:1.2;
+    margin-bottom:20px;
+    font-family:"Brush Script MT", cursive;
+}
+
+#home p{
+    color:#ddd;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    background:#d4af37;
+    color:black;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:6px;
+    margin:5px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:white;
+}
+
+/* Sections */
+
+section{
+    padding:70px 20px;
+    text-align:center;
+}
+
+section h2{
+    margin-bottom:20px;
+    font-size:32px;
+}
+
+/* About */
+
+.about-text{
+    max-width:700px;
+    margin:auto;
+    color:#ccc;
+    line-height:1.8;
+}
+
+/* Portfolio */
+
+#portfolio{
+    background:#181818;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:15px;
+    max-width:1000px;
+    margin:auto;
+    margin-top:30px;
+}
+
+.photo-card{
+    background:#1a1a1a;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.photo-card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.photo-card p{
+    padding:12px;
+    color:#d4af37;
+}
+
+/* Services */
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    max-width:1000px;
+    margin:auto;
+}
+
+.card{
+    background:#1c1c1c;
+    padding:25px;
+    border-radius:10px;
+    border:1px solid #333;
+}
+
+.card h3{
+    color:#d4af37;
+    margin-bottom:10px;
+}
+
+/* Contact */
+
+#contact{
+    background:#181818;
+}
+
+.contact-box{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    max-width:700px;
+    margin:auto;
+}
+
+.info{
+    background:#1c1c1c;
+    padding:20px;
+    border-radius:10px;
+}
+
+.info h3{
+    color:#d4af37;
+    margin-bottom:10px;
+}
+
+/* Footer */
+
+footer{
+    background:#000;
+    padding:25px;
+    text-align:center;
+}
+
+footer h3{
+    color:#d4af37;
+}
+
+footer p{
+    color:#aaa;
+}
+
+@media(max-width:600px){
+
+#home h2{
+    font-size:38px;
+}
+
+nav a{
+    font-size:13px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>MAULI PHOTOGRAPHY</h1>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="home">
+
+    <div class="demo">WEBSITE CONCEPT • DEMO</div>
+
+    <h2>
+        Your Moments.<br>
+        Your Story.<br>
+        Forever Captured.
+    </h2>
+
+    <p>
+        Wedding • Pre-Wedding • Events • Birthday Photography
+    </p>
+
+    <a href="#portfolio" class="btn">View Portfolio</a>
+    <a href="#contact" class="btn">Book a Shoot</a>
+
+</section>
+
+<section id="about">
+
+    <h2>About Mauli Photography</h2>
+
+    <p class="about-text">
+        We believe every special moment deserves to be remembered.
+        From weddings and pre-weddings to birthdays and celebrations,
+        we capture genuine emotions and turn them into lasting memories.
+    </p>
+
+</section>
+
+<section id="portfolio">
+
+    <h2>Our Portfolio</h2>
+
+    <div class="gallery">
+
+        <div class="photo-card">
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=600&q=80">
+            <p>Wedding</p>
+        </div>
+
+        <div class="photo-card">
+            <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=600&q=80">
+            <p>Pre-Wedding</p>
+        </div>
+
+        <div class="photo-card">
+            <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=600&q=80">
+            <p>Events</p>
+        </div>
+
+        <div class="photo-card">
+            <img src="https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=600&q=80">
+            <p>Birthday</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="services">
+
+    <h2>Services</h2>
+
+    <div class="services">
+
+        <div class="card">
+            <h3>Wedding Photography</h3>
+            <p>Beautiful moments of your special day.</p>
+        </div>
+
+        <div class="card">
+            <h3>Pre-Wedding</h3>
+            <p>Creative storytelling through photography.</p>
+        </div>
+
+        <div class="card">
+            <h3>Events</h3>
+            <p>Professional event coverage.</p>
+        </div>
+
+        <div class="card">
+            <h3>Birthday Photography</h3>
+            <p>Memories captured forever.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="contact">
+
+    <h2>Let's Capture Your Story</h2>
+
+    <div class="contact-box">
+
+        <div class="info">
+            <h3>📍 Location</h3>
+            <p>Dighi, Pune</p>
+        </div>
+
+        <div class="info">
+            <h3>📞 Contact</h3>
+            <p>+91 XXXXX XXXXX</p>
+        </div>
+
+    </div>
+
+    <br>
+<a class="btn" href="#contact">WhatsApp</a>
+  
+</section>
+
+<footer>
+    <h3>MAULI PHOTOGRAPHY</h3>
+    <p>Capturing moments. Creating memories.</p>
+    <small>Website Concept • Demo</small>
+</footer>
+
+</body>
+  </html>
